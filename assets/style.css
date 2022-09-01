@@ -1,0 +1,37 @@
+.title {
+    background-image: url("./images/sky.jpg"), linear-gradient(to right, blue, navy);
+    background-blend-mode: lighten;
+    color: aliceblue;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.search {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+input {
+    width: 100%;
+    margin: 0, 10px, 0, 10px;
+}
+
+.stats {
+  grid-column-start: 2;
+}
+
+.forcast {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+.form {
+    padding: none;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>My Weather</title>
+
+</head>
+<body>
+    <header class="container-fluid h-50 bg-gradient p-2 m-2 mr-2">
+        <h1 class="title display-4 text-center m-1 p-3 font-weight-bold">My Weather Dashboard</h1>
+    </header>
+    <div class="body mb-6 pb-6">
+        
+        <section class="cities">
+            <div class="search">
+                <div>
+                    <h2>Search for a City:</h2>
+                    <form class="form container">
+                        <input type="text" id="city" class="input" name="city"><br>
+                        <button id="form-btn" class="btn btn-primary btn-block my-3"
+                        type="submit" value="submit">Search</button>
+                    </form>
+                </div>
+                <div class="cities-btns">
+                  <button id="austin" class="btn-lg btn-block mt-3 font-weight-bold">Austin</button>
+                  <button id="chicago" class="btn-lg btn-block mt-3 font-weight-bold">Chicago</button>
+                  <button id="new+york" class="btn-lg btn-block mt-3 font-weight-bold">New York</button>
+                  <button id="orlando" class="btn-lg btn-block mt-3 font-weight-bold">Orlando</button>
+                  <button id="san+francisco" class="btn-lg btn-block mt-3 font-weight-bold">San Francisco</button>
+                  <button id="seattle" class="btn-lg btn-block mt-3 font-weight-bold">Seattle</button>
+                  <button id="denver" class="btn-lg btn-block mt-3 font-weight-bold">Denver</button>
+                  <button id="atlanta" class="btn-lg btn-block mt-3 font-weight-bold">Atlanta</button>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+           
+            <div class="display">
+                <div class="container forecast row">
+                    <div class="display">
+                        <h2 class="currentCity col-10">
+                            <span class="city-name row"></span>
+                            <span class="city-date row"></span>
+                            <span class="desc row"></span>
+                        </h2>
+                    </div>
+                    <div class="selected-city col-1">
+                        <span class="temp row"></span>
+                        <span class="wind row"></span>
+                        <span class="humidity row"></span>
+                    </div>
+            </div>
+            <div class="row">
+                <h3 class="forecast-header">5-Day Forecast:</h3>
+            </div>
+            <div class="row">
+                <div class="row" id="forecast-cards">
+                    <div class="card col-2 text-white" id="day-1">
+                        <p class="card-1" id="date-0">Date</p>
+                        <img id="city-icon-1"></img>
+                        <p class="card-1" id="temp-0">Temp:</p>
+                        <p class="card-1" id="humidity-0">Humidity:</p>
+                    </div>
+              
+                    <div class="card col-2 text-white" id="day-2">
+                        <p class="card-2" id="date-1">Date</p>
+                        <img id="city-icon-2"></img>
+                        <p class="card-2" id="temp-1">Temp:</p>
+                        <p class="card-2" id="humidity-1">Humidity:</p>
+                    </div>
+              
+                    <div class="card col-2 text-white" id="day-3">
+                        <p class="card-3" id="date-2">Date</p>
+                        <img id="city-icon-3"></img>
+                        <p class="card-3" id="temp-2">Temp:</p>
+                        <p class="card=3" id="humidity-2">Humidity:</p>
+                    </div>
+              
+                    <div class="card col-2 text-white" id="day-4">
+                        <p class="card-4" id="date-3">Date</p>
+                        <img id="city-icon-4"></img>
+                        <p class="card-4" id="temp-3">Temp:</p>
+                        <p class="card-4" id="humidity-3">Humidity:</p>
+                    </div>
+              
+                    <div class="card col-2 text-white" id="day-5">
+                        <p class="card-5" id="date-4">Date</p>
+                        <img id="city-icon-5"></img>
+                        <p class="card-5" id="temp-4">Temp:</p>
+                        <p class="card-5" id="humidity-4">Humidity:</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
